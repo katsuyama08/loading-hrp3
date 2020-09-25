@@ -68,7 +68,7 @@ generate( HRPSVCBodyCellPlugin, ::rKernelDomain::Button, "exportEntryPort=eButto
 
 //[linkunit, domain(HRP, "user")]
 [node, to_through(rKernelDomain, HRPSVCThroughPlugin, "")]
-region rSample {
+region rUserDomain {
 	cell nMruby::tnLUM_sKernel BridgeKernel {
 		cTECS = LUMKernel.eKernel;
 	};

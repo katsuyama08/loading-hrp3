@@ -139,12 +139,14 @@ CFLAGS = $(COPTS) $(CDEFS) $(INCLUDES)
 #
 # Include source files (yamauchi)
 #
+# $(KERNELDIR)/tecs_lib/mindstorms_ev3 $(KERNELDIR)/tecs_lib/mindstorms_ev3/balancer
+# $(KERNELDIR)/tecs_lib/common
+#
 SRCDIRS += $(KERNELDIR)/library $(KERNELDIR)/include_lum \
 		$(KERNELDIR)/mruby \
 		$(KERNELDIR)/sdk/common $(KERNELDIR)/sdk/OBJ $(KERNELDIR)/sdk/OBJ/gen \
 		$(KERNELDIR)/sdk/OBJ/gen/rSample \
 		$(KERNELDIR)/sdk/TEMP2 \
-		$(KERNELDIR)/tecs_lib/mindstorms_ev3 $(KERNELDIR)/tecs_lib/mindstorms_ev3/balancer $(KERNELDIR)/tecs_lib/common \
 		$(TECSGEN_DIR)/tecs/mruby
 vpath %.c $(SRCDIRS)
 vpath %.cpp $(SRCDIRS)

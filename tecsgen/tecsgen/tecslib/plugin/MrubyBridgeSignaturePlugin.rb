@@ -436,9 +436,7 @@ EOT
       file.print <<EOT
 
   // prototype of TECSInitializer (MBP510)
-  region rSample {
   cell nMruby::tTECSInitializer #{vm_name}_TECSInitializer;
-  };
 EOT
       file.close
 
@@ -523,7 +521,6 @@ EOT
 #    }
 
     file.print "\n  // MrubyBridgeSignaturePlugin: MBP601\n"
-    file.print "region rSample {\n"
     @@VM_celltypes.each{ |vm_name, instance_list|
       instance_list.each { |celltype_name, array|
         cell = array[0]
@@ -579,7 +576,7 @@ EOT
           file.print "    cInitialize[] = C#{name}.eInitialize;\n"
         }
       end
-      file.print "  }; };"
+      file.print "  };"
     }
     
   end
